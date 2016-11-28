@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/wuziqi.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/wuziqi.js"></script>
+	</head>
+	<body>
+		<!--落子音乐-->
+		<audio class="audio" src="097.wav" ></audio>
+		<audio class="audio" src="098.wav" ></audio>
+		<!--棋盘画布-->
+		<canvas id="canvas" width="450" height="450"></canvas>
+		<!--开始界面-->
+		<div class="st">Are you ready ?</div>
+		<!--左上方五子棋-->
+		<div class="wuziqi">
+			<img src="images/wuziqi.png" alt="" />
+		</div>
+		<!--左下方图片-->
+		<div class="left">
+			<img src="images/1.png" alt="" />
+		</div>
+		<!--右上方图片-->
+		<div class="right">
+			<img src="images/2.png" alt="" />
+		</div>
+		<!--选项-->
+		<div id="box">
+			<button class="button white">开始游戏</button>
+			<button class="button white">重新开始</button>
+			<button class="button white">游戏模式</button>
+			<button class="button white">游戏规则</button>
+			<button class="button white">退出游戏</button>
+			<button class="button white" id="qi">查看棋谱</button>
+			<a href="javascript:;" class="player red">人人对战</a>
+			<a href="javascript:;" class="computer">人机对战</a>
+		</div>
+		<!--右侧计时画布-->
+		<div id="time">
+			<canvas id="canvas1" width="180" height="180"></canvas>
+			<canvas id="canvas2" width="180" height="180"></canvas>
+		</div>
+		<!--游戏规则-->
+		<div class="hint">玩家将自己的棋子在横、竖，斜任意一个方向排满五个就是胜利者。为了增加游戏的趣味性，特意增加了游戏的难度，要想取胜需要加把劲哦！</div>
+		<!--结束效果-->
+		<div id="over">
+			<div class="over"></div>
+		</div>
+		<!--棋盘-->
+		<div class="qipu"></div>
+	</body>
+</html>
